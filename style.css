@@ -79,7 +79,7 @@ label {
 
 .input-field {
 	height: 30px;
-	/*padding: 5px;*/
+	padding: 2px 5px;
 	border: 1px solid #DFE1E6;
 	border-radius: 2px;
 }
