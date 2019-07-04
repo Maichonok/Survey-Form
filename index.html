@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<h1 id="title">Survey Form</h1>
+   
+		<div id="form-outer">
+			<p id="description">
+				Let us know how we can improve web-site: beaversbrothers.ru
+			</p>
+
+
+			<form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+				<div class="rowTab">
+					<div class="labels">	
+						<label id="name-label" for="name">* Name:</label>
+					</div>
+					<div class="rightTab">
+						<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+					</div>
+				</div>
+
+				<div class="rowTab">
+					<div class="labels">	
+						<label id="email-label" for="email">* Email: </label>
+					</div>
+					<div class="rightTab">
+						<input type="email" name="email" id="email" class="input-field"  required placeholder="Enter your email">
+					</div>
+				</div>
+
+				<div class="rowTab">
+					<div class="labels">	
+						<label id="number-label" for="age">* Age:</label>
+					</div>
+					<div class="rightTab">
+						<input type="number" name="age" id="number" min="1" max="125"class="input-field" placeholder="Age">
+					</div>
+				</div>
+
+				<div class="rowTab">
+					<div class="labels">	
+					<label for="currentPos">Which department in the company do you represent?</label>
+					</div>
+					<div class="rightTab">
+						<select id="dropdown" name="currentPos" class="dropdown">
+							<option disabled value>Select an option</option>
+							<option value="marketing">Marketing</option>
+							<option value="it">IT</option>
+							<option value="ceo">CEO</option>
+							<option value="PreferNo">Prefer not say</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="rowTab">
+					<div class="labels top">	
+					<label for="userRating">* Would you recommend our website to other people?
+					</label>
+					</div>
+					<div class="rightTab">
+						<ul>
+							<li class="radio">
+								<label>Definitely
+									<input name="radio-buttons" value="1" type="radio" class="userRatings">
+								</label>
+							</li>
+							<li class="radio">
+								<label>Maybe
+									<input name="radio-buttons" value="2" type="radio" class="userRatings">
+								</label>
+							</li>
+							<li class="radio">
+								<label>Not sure
+									<input name="radio-buttons" value="3" type="radio" class="userRatings">
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="rowTab">
+					<div class="labels top">	
+					<label for="most-like">What do you like most on the our website:</label>
+					</div>
+					<div class="rightTab">
+						<select id="most-like" name="mostLike" class="dropdown">
+							<option disabled value>Select an option</option>
+							<option value="design">Design</option>
+							<option value="portfolio">Portfolio</option>
+							<option value="blog">Blog</option>
+							<option value="reviews">Reviews</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="rowTab">
+					<div class="labels top">	
+					<label for="preferences">Would you like to receive information from us on the following issues:</label>
+					</div>
+					<div class="rightTab">
+						<ul>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" value="1" type="checkbox" class="userRatings">Info about new project
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" value="2" type="checkbox" class="userRatings">Information about special offers
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" value="3" type="checkbox" class="userRatings">Useful information from the blog
+								</label>
+							</li>
+							<li class="checkbox">
+								<label>
+									<input name="prefer" value="4" type="checkbox" class="userRatings">Job information
+								</label>
+							</li>
+						</ul>	
+					</div>
+
+				<div class="rowTab">
+					<div class="labels top">	
+						<label for="comments">Any Comments or Suggestions?</label>
+					</div>
+					<div class="rightTab">
+						<textarea name="comment" rows="10" cols="40" placeholder="Enter your comment here"></textarea>
+					</div>
+				</div>
+
+				<button id="submit" type="submit">Submite</button> 
+				<div id="background"></div>
+			</form>
+	</body>
+</html>
