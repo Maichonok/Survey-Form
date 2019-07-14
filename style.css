@@ -1,10 +1,10 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body,html {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 html {
@@ -13,33 +13,32 @@ html {
 
 body {
 	font-family: 'Roboto', sans-serif;
-    min-width: 320px;
-    min-height: 100%;
-    padding: 30px 0;
+	min-width: 320px;
+	min-height: 100%;
+	padding: 30px 0;
 }
 
 
 #background {
-  background-image: url("https://beaversbrothers.ru/_next/static/images/bg-ad036294e3a70274f2d5ce8902fa349a.svg");
-  background-size: 355px 355px;
-  background-color: #EBECF0;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;   
+	background-image: url("https://beaversbrothers.ru/_next/static/images/bg-ad036294e3a70274f2d5ce8902fa349a.svg");
+	background-size: 355px 355px;
+	background-color: #EBECF0;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	z-index: -1;
 }
 
 
 #title {
-    font-size: 50px;
-   	color: 	#42526E;
-   	-webkit-text-stroke: 1px #42526E;
-   	text-align: center;
-   	margin-top: 0;
-   	/*padding-top: 20px;*/
+	font-size: 50px;
+	color: 	#42526E;
+	-webkit-text-stroke: 1px #42526E;
+	text-align: center;
+	margin-top: 0;
 }
 
 p {
@@ -57,8 +56,8 @@ p {
     padding-top: 20px;
     text-align: center;
     padding-bottom: 10px;
-    border-spacing: 1em .5em;
-  	border: 1.5px solid orange;
+    border-spacing: 16px 80px;
+    border: 1.5px solid orange;
 }
 
 
@@ -73,13 +72,9 @@ p {
     vertical-align: top;
 }
 
-label {
-    cursor: default;
-}
-
 .input-field {
 	height: 30px;
-	/*padding: 5px;*/
+	padding: 5px;
 	border: 1px solid #DFE1E6;
 	border-radius: 2px;
 }
@@ -105,10 +100,6 @@ ul {
 .dropdown {
 	height: 35px;
 	width: 140px;
-	/*padding: 5px;*/
-	/*margin: 15px;*/
-	/*margin-left: 5px;*/
-	/*margin-bottom: 10px;*/
 	border: 1px solid #c0c0c0;
 	border-radius: 2px;
 }
@@ -126,6 +117,7 @@ ul {
 textarea {
 	margin: 0;
 	resize: vertical;
+	padding: 5px;
 }
 
 #submit {
@@ -133,7 +125,7 @@ textarea {
 	border-radius: 4px;
 	color: #091E42;
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 16px;
 	height: 40px;
 	width: 96px;
 	margin: 10px;
@@ -142,32 +134,32 @@ textarea {
 
 @media screen and (max-width: 833px) {
 	.input-field {
-		width: 80%;
+	width: 80%;
 	}
 	select {
-		width: 90%;
-		}
-	textarea {
-		width: 90%;
-		}
+	width: 90%;
 	}
+	textarea {
+	width: 90%;
+	}
+}
 @media screen and (max-width: 520px) {
 	.labels {
-		width: 100%;
-		text-align: left;
+	width: 100%;
+	text-align: left;
 	}
 	.rightTab {
-		width: 80%;
-		float: left;	
+	width: 80%;
+	float: left;	
 	}
 	.input-field {
-		width: 100%;
+	width: 100%;
 	}
 	select {
-		width: 100%;
-		}
-	textarea {
-		width: 100%;
-		}	
+	width: 100%;
 	}
+	textarea {
+	width: 100%;
+	}	
+}
 
